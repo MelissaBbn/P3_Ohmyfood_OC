@@ -1,0 +1,175 @@
+body 
+{
+    width: 900px;
+    position: relative;
+    margin: auto;
+    padding: 0;
+    display: flex;
+    overflow-x: hidden;
+    font-size: 17px;
+}
+main
+{
+    width: 100%;
+}
+header
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 45px;
+    font-size: 30px;
+    background-color: #49927C;
+    text-align: center;
+    color: #FFD54F;
+    font-family: 'quebec';
+}    
+footer
+{
+    width:100%; 
+    margin-top: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #49927C;
+    font-size: 25px;
+    color: #FFD54F;
+    font-family: 'stem';
+}
+.titre
+{
+    font-family: 'Public';
+    text-align: center;
+    font-size: 30px;
+}
+h2
+{
+    color: #4A2121;
+    font-family: 'Devonshire';
+    font-size: 34px;
+    text-align: center;
+    margin: auto;
+}
+h4
+{
+    color: #4A2121;
+    font-family: 'Devonshire';
+    font-size: 30px;
+    text-align: center;
+    margin: auto;
+}
+.menu1
+{
+    background-color: #FFE3DD;
+    box-shadow: 0px 0px 25px #CFD8DC;
+    padding-top: 55px;
+}
+h3
+{
+    font-family: 'Segoe';
+    font-weight: bold;
+     color: #4A2121;
+     text-align: center;
+     margin: auto;
+      display: table;
+  white-space: nowrap;
+}
+p
+{
+ font-family: 'Segoe';
+ color: #4A2121;
+  line-height: 2.5em;
+}
+.iconeHeader
+{
+    font-size: 55px;
+    width: -webkit-fill-available;
+    text-align: center;
+    background: linear-gradient(109deg, #FE6060 50%, #FA9163 53%);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+
+.iconeFooter
+{
+    font-size: 55px;
+    width: -webkit-fill-available;
+    text-align: center;
+    background: linear-gradient(109deg, #FE6060 50%, #FA9163 65%);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+.mentions
+{
+    padding: 25px;
+}
+.contact
+{
+    padding: 25px;
+}
+@font-face
+{
+    font-family: 'quebec';
+    src: url(quebec-serial-heavy-regular.ttf);
+}
+@font-face
+{
+    font-family: 'Stem';
+    src: url(Stem-Regular.ttf);
+}
+@font-face 
+{
+    font-family: 'Segoe';
+    src: url('Segoe-Print-Bold.ttf');
+}
+@font-face 
+{
+    font-family: 'Devonshire';
+    src: url('Devonshire-Regular.ttf');
+}
+@font-face
+{
+    font-family: 'Public';
+    src:url('PublicSans-Bold.ttf');
+}
+
+.myArticle
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-bottom: 35px;
+}
+
+.myArticleNote
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 8%;
+}
+
+.laNote{
+    display: flex;
+    margin-left: 4%;
+}
+
+.mesTraits{
+    display: flex;
+    flex-direction: row;
+}
+.trait
+
+{
+    width: 35%;
+    height: 2px;
+    background-color: blue;
+    margin:auto;
+}
+/*h3:before, h3:after {
+  content: "";
+  display: table-cell;
+  width: 5px;
+    height: 10px;
+    background-color: blue;
+}*/

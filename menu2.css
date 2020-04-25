@@ -1,0 +1,135 @@
+body 
+{
+    width: 900px;
+    position: relative;
+    margin: auto;
+    padding: 0;
+    display: flex;
+    overflow-x: hidden;
+    font-size: 17px;
+}
+main
+{
+    width: 100%;
+}
+header
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 45px;
+    font-size: 30px;
+    background-color: #49927C;
+    text-align: center;
+    color: #FFD54F;
+    font-family: 'quebec';
+}    
+.entrée
+{
+    color: #C47119;
+}
+.platprincipal
+{
+    color: #9F668F;
+}
+.dessert
+{
+    color: #7346CD;
+}
+.plats
+{
+    width: -webkit-fill-available;
+        padding-left: 100px;
+}
+.prix
+{
+    padding-right: 100px;
+}
+h3
+{
+    text-align: center;
+}
+p
+{
+    line-height: 2em;
+}
+footer
+{
+    width:100%; 
+    margin-top: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #49927C;
+    font-size: 25px;
+    color: #FFD54F;
+    font-family: 'stem';
+}
+.police
+{
+    color: #4A2121;
+    font-family: 'Devonshire';
+    font-size: 34px;
+    text-align: center;
+}
+p
+{
+    font-family: 'Cambria';
+}
+.menu2
+{
+    background-color: #FFF5FC;
+    box-shadow: 0px 0px 25px #CFD8DC;
+}
+.mentions
+{
+    padding: 25px;
+}
+.contact
+{
+    padding: 25px;
+}
+h2
+{
+    font-family: 'CroissantOne';
+    background: linear-gradient(171deg, #D18115 31%, #9F668F 54%, #9D67E9 62%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+h3
+{
+    font-family: 'Cheltenham';
+}
+article
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-bottom: 35px;
+}
+@font-face 
+{
+    font-family: 'CroissantOne';
+    src: url('CroissantOne-Regular.ttf');
+}
+@font-face
+{
+    font-family: 'quebec';
+    src: url(quebec-serial-heavy-regular.ttf);
+}
+@font-face
+{
+    font-family: 'Stem';
+    src: url(Stem-Regular.ttf);
+}
+@font-face
+{
+    font-family: 'Cambria';
+    src: url(Cambria.ttf);
+}
+@font-face
+{
+    font-family: 'Cheltenham';
+    src: url(Cheltenham-NormalRegular.ttf);
+}

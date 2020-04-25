@@ -1,0 +1,242 @@
+body 
+{
+    width: 900px;
+    position: relative;
+    margin: auto;
+    padding: 0;
+    display: flex;
+    overflow-x: hidden;
+    font-size: 17px;
+}
+header
+{
+	width: 100%;
+    display: flex;
+    flex-direction: column;
+	margin-bottom: 45px;
+    font-size: 30px;
+	background-color: #49927C;
+	text-align: center;
+	color: #FFD54F;
+    font-family: 'quebec';
+}    
+article
+{
+	margin-top: 25px;
+	display: flex;
+	flex-direction: row;
+} 
+footer
+{
+    width:100%; 
+    margin-top: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #49927C;
+    font-size: 25px;
+    color: #FFD54F;
+    font-family: 'stem';
+}
+
+.menus
+{
+    margin: 40px; 
+}
+i
+{
+    font-size: 43px;
+    text-align: center;
+    margin-top: 18vh;
+    background: linear-gradient(109deg, #FE6060 50%, #FA9163 53%);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+.menu1
+{
+    width: 325px;
+    height: 450px;
+    background-color: #FFE3DD;
+    box-shadow: 0px 0px 25px #CFD8DC;
+    display: flex;
+    flex-direction: column;
+}
+.Lanote
+{
+    color: #4A2121;
+    font-family: 'Devonshire';
+    font-size: 34px;
+    text-align: center;
+}
+.MENU1police
+{
+    color: #4A2121;
+    font-family: 'Segoe';
+    font-size: 40px;
+    text-align: center;
+}
+.menu2
+{
+    width: 325px;
+    height: 450px;
+    background-color: #FFF5FC;
+    box-shadow: 0px 0px 25px #CFD8DC;
+    font-family: 'CroissantOne';
+    display: flex;
+    flex-direction: column;
+}
+.MENU2police
+{
+    font-family: 'RozhaOne';
+    color: #C47119;
+    font-size: 40px;
+    text-align: center;
+}
+.Lechic
+{
+   background: linear-gradient(171deg, #D18115 31%, #9F668F 54%, #9D67E9 62%);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   font-size: larger;
+   text-align: center;
+   margin-top: 25vh;
+}
+.menu3
+{
+    width: 325px;
+    height: 450px;
+    background-color: #F5F4F4;
+    box-shadow: 0px 0px 25px #CFD8DC;
+    display: flex;
+    flex-direction: column;
+}
+.MENU3police
+{
+    color: #2080E7;
+    font-family: 'Segoe';
+    font-size: 40px;
+    text-align: center;
+}
+.Ledélice
+{
+    font-family: 'DancingScript';
+    background: linear-gradient(162deg, #092ABE 35%, #2080E7 53%);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   text-align: center;
+   font-size: 32px;
+   margin-top: 26vh;
+}
+.menu4
+{
+    width: 325px;
+    height: 450px;
+    background-color: #FFFFFC;
+    box-shadow: 0px 0px 25px #CFD8DC;
+    display: flex;
+    flex-direction: column;
+}
+.MENU4police
+{
+    color: #6DB947;
+    font-family: 'Segoe';
+    font-size: 40px;
+    text-align: center;
+}
+.Lapalette
+{
+    font-family: 'Kaushan';
+    font-size: 25px;
+    text-align: center;
+    background: linear-gradient(166deg, #328708 34%, #6DB947 49%, #9BEE71 54%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    margin-top: 28vh;
+}
+@font-face 
+{
+    font-family: 'Devonshire';
+    src: url('Devonshire-Regular.ttf');
+}
+@font-face 
+{
+    font-family: 'Segoe';
+    src: url('Segoe-Print-Bold.ttf');
+}
+@font-face 
+{
+    font-family: 'Kaushan';
+    src: url('KaushanScript-Regular.ttf');
+}
+@font-face 
+{
+    font-family: 'CroissantOne';
+    src: url('CroissantOne-Regular.ttf');
+}
+@font-face 
+{
+    font-family: 'DancingScript';
+    src: url('DancingScript-VariableFont.ttf');
+}
+@font-face 
+{
+    font-family: 'RozhaOne';
+    src: url('RozhaOne-Regular.ttf');
+}
+@font-face
+{
+    font-family: 'quebec';
+    src: url(quebec-serial-heavy-regular.ttf);
+}
+@font-face
+{
+    font-family: 'Stem';
+    src: url(Stem-Regular.ttf);
+}
+a
+{
+    text-decoration: none;
+}
+.mentions
+{
+    padding: 25px;
+}
+.contact
+{
+    padding: 25px;
+}
+.loading 
+{
+    font-size: 35px;
+    background-color: #49927C;
+    color: #FFD54F;
+    padding: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 15px;
+    width: max-content;
+    margin: auto;
+    font-family: 'stem';
+}
+
+.loading:after {
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: bottom;      
+  animation: ellipsis steps(4,end) 900ms infinite;
+  content: "\2026";
+  width: 0px;
+}
+
+@keyframes ellipsis {
+  to {
+    width: 1.25em;    
+  }
+}
+
+@-webkit-keyframes ellipsis {
+to {
+    width: 1.25em;    
+  }
+}

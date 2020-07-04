@@ -28,6 +28,13 @@ header
 {
     color: #C47119;
 }
+article
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-bottom: 35px;  
+}
 .platprincipal
 {
     color: #9F668F;
@@ -35,27 +42,93 @@ header
 .dessert
 {
     color: #7346CD;
+    padding-bottom: 100px;
 }
-.plats
+.plat
 {
-    width: -webkit-fill-available;
-        padding-left: 100px;
+    margin-left: 45px;
+        width: 100%;
 }
 .prix
 {
-    padding-right: 100px;
+   margin-right: 45px;
+}
+.platprix
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    font-family: 'Cambria';
+    margin-top: 2%;
 }
 h3
 {
     text-align: center;
 }
-p
+.entrée h3:hover
 {
-    line-height: 2em;
+ position: relative;
+}
+.entrée h3:after
+{
+  content:'';
+  position: absolute;
+  width: 0;
+  height: 3px;
+  display: block;
+  margin-top: 1px;
+  transition: width 1s ease;
+}
+.entrée h3:hover:after
+{
+ width: 100%;
+ left: 0px;
+ background: #C47119;
+}
+.platprincipal h3:hover
+{
+ position: relative;
+}
+.platprincipal h3:after
+{
+  content:'';
+  position: absolute;
+  width: 0;
+  height: 3px;
+  display: block;
+  margin-top: 1px;
+  transition: width 1s ease;
+}
+.platprincipal h3:hover:after
+{
+ width: 100%;
+ left: 0px;
+ background: #9F668F;
+}
+.dessert h3:hover
+{
+ position: relative;
+}
+.dessert h3:after
+{
+  content:'';
+  position: absolute;
+  width: 0;
+  height: 3px;
+  display: block;
+  margin-top: 1px;
+  transition: width 1s ease;
+}
+.dessert h3:hover:after
+{
+ width: 100%;
+ left: 0px;
+ background: #7346CD;
 }
 footer
 {
-    width:100%; 
+    width: 900px; 
     margin-top: 80px;
     display: flex;
     flex-direction: row;
@@ -64,6 +137,8 @@ footer
     font-size: 25px;
     color: #FFD54F;
     font-family: 'stem';
+    bottom: 0;
+    position: fixed;
 }
 .police
 {
@@ -72,41 +147,49 @@ footer
     font-size: 34px;
     text-align: center;
 }
-p
-{
-    font-family: 'Cambria';
-}
 .menu2
 {
     background-color: #FFF5FC;
     box-shadow: 0px 0px 25px #CFD8DC;
+        margin-bottom: 20%;
 }
 .mentions
 {
     padding: 25px;
+    color: #FFD54F;
+}
+.mentions:hover
+{
+    animation: wiggle 0.4s infinite ;
+  animation-timing-function: linear;   
 }
 .contact
 {
     padding: 25px;
+    color: #FFD54F;
+}
+.contact:hover
+{
+    animation: wiggle 0.4s infinite ;
+  animation-timing-function: linear;   
+}
+a
+{
+    text-decoration: none;
 }
 h2
 {
     font-family: 'CroissantOne';
-    background: linear-gradient(171deg, #D18115 31%, #9F668F 54%, #9D67E9 62%);
+    background: linear-gradient(160deg, #D18115 49%, #9D67E9 64%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-align: center;
+        padding-top: 120px;
+        padding-bottom: 30px;
 }
 h3
 {
     font-family: 'Cheltenham';
-}
-article
-{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding-bottom: 35px;
 }
 @font-face 
 {
@@ -132,4 +215,186 @@ article
 {
     font-family: 'Cheltenham';
     src: url(Cheltenham-NormalRegular.ttf);
+}
+.mestraits{
+    display: flex;
+    flex-direction: row;
+}
+.traitdroit1
+{
+    width: 27%;
+    height: 4px;
+    background-color: #C47119;
+    margin:auto;
+    margin-right: 65px;
+     border-bottom-right-radius: 100%;
+     border-top-right-radius: 100%; 
+
+}
+.traitgauche1
+{
+    width: 25%;
+    height: 4px;
+    background-color: #C47119;
+    margin:auto;
+    margin-left: 65px;
+      border-bottom-left-radius: 100%;
+     border-top-left-radius: 100%;
+}
+.traitdroit2
+{
+    width: 27%;
+    height: 4px;
+    background-color: #9F668F;
+    margin:auto;
+    margin-right: 65px;
+    border-bottom-right-radius: 100%;
+     border-top-right-radius: 100%; 
+
+}
+.traitgauche2
+{
+    width: 27%;
+    height: 4px;
+    background-color: #9F668F;
+    margin:auto;
+    margin-left: 65px;
+      border-bottom-left-radius: 100%;
+     border-top-left-radius: 100%;
+}
+.traitdroit3
+{
+    width: 27%;
+    height: 4px;
+    background-color: #7346CD;
+    margin:auto;
+    margin-right: 65px;
+    border-bottom-right-radius: 100%;
+     border-top-right-radius: 100%; 
+
+}
+.traitgauche3
+{
+    width: 27%;
+    height: 4px;
+    background-color: #7346CD;
+    margin:auto;
+    margin-left: 65px;
+    border-bottom-left-radius: 100%;
+     border-top-left-radius: 100%; 
+
+}
+@keyframes wiggle {
+  0% { transform: translate(2px, 0); }
+  25% { transform: translate(-2px, 0); }
+  50% { transform: translate(2px, 0); }
+  75%{ transform: translate(-2px, 0); }
+  100% { transform: translate(2px, 0); }
+}
+
+
+@media only screen and (max-width: 900px){
+    body {
+        width: 100%;
+        
+    } 
+    footer {
+        width: 100%;
+    }
+    .platprix{
+      
+        
+        width: 80%;
+  
+    }
+    .plat{
+        margin-left: 60px;
+        margin-right: 80px;
+        
+    }
+    .prix
+    {
+        margin:auto;
+        text-align: center;
+        
+    }
+    .mentions{
+        font-size: 15px;
+    }
+    .contact{
+        font-size: 15px;
+    }
+     .menu2
+    {
+        margin-bottom: 20%;
+    }
+}
+@media only screen and (max-width: 650px){
+    body {
+        width: 100%;
+        flex-direction: column;
+    } 
+    footer {
+        width: 100%;
+    }
+    .platprix{
+      flex-direction: column;
+        
+        width: 75%;
+        margin-right: 40px;
+    }
+    .plat{
+        margin-left: 60px;
+    }
+    .prix
+    {
+        margin:auto;
+        text-align: center;
+        margin-left: 60px;
+    }
+    .mentions{
+        font-size: 15px;
+    }
+    .contact{
+        font-size: 15px;
+    }
+    .menu2
+    {
+        margin-bottom: 20%;
+    }
+}
+@media only screen and (max-width: 500px){
+    body {
+        width: 100%;
+        flex-direction: column;
+    } 
+    footer {
+        width: 100%;
+    }
+    .platprix{
+      flex-direction: column;
+        font-size: 14px;
+        width: 75%;
+        margin-right: 40px;
+    }
+    .plat{
+        margin-left: 40px;
+    }
+    .prix
+    {
+      padding-top: 10px;
+        margin:auto;
+        text-align: center;
+        margin-left: 40px;
+    }
+    .mentions{
+        font-size: 15px;
+    }
+    .contact{
+        font-size: 15px;
+    }
+    .menu2
+    {
+        margin-bottom: 30%;
+    }
 }

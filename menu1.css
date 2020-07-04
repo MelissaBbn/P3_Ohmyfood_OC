@@ -4,7 +4,6 @@ body
     position: relative;
     margin: auto;
     padding: 0;
-    display: flex;
     overflow-x: hidden;
     font-size: 17px;
 }
@@ -26,8 +25,7 @@ header
 }    
 footer
 {
-    width:100%; 
-    margin-top: 80px;
+    width: 900px; 
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -35,6 +33,8 @@ footer
     font-size: 25px;
     color: #FFD54F;
     font-family: 'stem';
+    bottom: 0;
+    position: fixed;
 }
 .titre
 {
@@ -49,6 +49,7 @@ h2
     font-size: 34px;
     text-align: center;
     margin: auto;
+    margin-bottom: 6px;
 }
 h4
 {
@@ -63,6 +64,15 @@ h4
     background-color: #FFE3DD;
     box-shadow: 0px 0px 25px #CFD8DC;
     padding-top: 55px;
+     margin-bottom: 20%;
+}
+.platprix{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    font-family: 'Segoe';
+    margin-top: 2%;
 }
 h3
 {
@@ -73,12 +83,29 @@ h3
      margin: auto;
       display: table;
   white-space: nowrap;
+  margin-top: 7px;
+      margin-bottom: 8px;
 }
-p
+h3:hover
 {
- font-family: 'Segoe';
- color: #4A2121;
-  line-height: 2.5em;
+ position: relative;
+}
+h3:after
+{
+  content:'';
+  position: absolute;
+  width: 0;
+  height: 4px;
+  border-radius: 35%;
+  display: block;
+  margin-top: 1px;
+  transition: width 1s ease;
+}
+h3:hover:after
+{
+ width: 100%;
+ left: 0px;
+ background: #4A2121;
 }
 .iconeHeader
 {
@@ -102,10 +129,26 @@ p
 .mentions
 {
     padding: 25px;
+    color: #FFD54F;
+}
+.mentions:hover
+{
+    animation: wiggle 0.4s infinite ;
+  animation-timing-function: linear;   
 }
 .contact
 {
     padding: 25px;
+    color: #FFD54F;
+}
+.contact:hover
+{
+    animation: wiggle 0.4s infinite ;
+  animation-timing-function: linear;   
+}
+a
+{
+    text-decoration: none;
 }
 @font-face
 {
@@ -136,9 +179,9 @@ p
 .myArticle
 {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
-    padding-bottom: 35px;
+    padding-bottom: 50px;
 }
 
 .myArticleNote
@@ -147,6 +190,7 @@ p
     flex-direction: row;
     justify-content: center;
     padding-bottom: 8%;
+    padding-top: 2%;
 }
 
 .laNote{
@@ -154,22 +198,175 @@ p
     margin-left: 4%;
 }
 
-.mesTraits{
+.mestraits{
     display: flex;
     flex-direction: row;
 }
-.trait
-
+.traitdroit
 {
-    width: 35%;
-    height: 2px;
-    background-color: red;
-    margin:auto;
+    width: 28%;
+    height: 6px;
+    background-color: #4A2121;
+    margin: auto;
+    margin-right: 80px;
+    border-radius: 35%;
 }
-/*h3:before, h3:after {
-  content: "";
-  display: table-cell;
-  width: 5px;
-    height: 10px;
-    background-color: blue;
-}*/
+.traitgauche
+{
+    width: 28%;
+    height: 6px;
+    background-color: #4A2121;
+     margin: auto;
+     margin-left: 80px;
+     border-radius: 35%;
+}
+.prix
+{
+    margin-right: 80px;
+}
+.plat
+{
+    margin-left: 80px;
+        width: 100%;
+}
+@keyframes wiggle {
+  0% { transform: translate(2px, 0); }
+  25% { transform: translate(-2px, 0); }
+  50% { transform: translate(2px, 0); }
+  75%{ transform: translate(-2px, 0); }
+  100% { transform: translate(2px, 0); }
+}
+
+@media only screen and (max-width: 900px){
+    body {
+        width: 100%;
+        flex-direction: column;
+    }
+    footer {
+        width: 100%;
+    }
+.platprix{
+    flex-direction: column;
+}
+ .prix
+    {
+        margin:auto;
+        text-align: center;
+        margin-left: 100px;
+    }
+    .plat{
+        margin-left: 100px;
+    }
+     .menu1
+    {
+        margin-bottom: 20%;
+    }
+}
+
+
+@media only screen and (max-width: 780px){
+    body {
+        width: 100%;
+        flex-direction: column;
+    } 
+    footer {
+        width: 100%;
+    }
+    .platprix{
+        flex-direction: column;
+        font-size: 15px;
+        width: 75%;
+        margin-right: 40px;
+    }
+    .plat{
+        margin-left: 100px;
+    }
+    .prix
+    {
+        margin:auto;
+        text-align: center;
+        margin-left: 100px;
+    }
+    .mentions{
+        font-size: 15px;
+    }
+    .contact{
+        font-size: 15px;
+    }
+     .menu1
+    {
+        margin-bottom: 20%;
+    }
+}
+@media only screen and (max-width: 650px){
+    body {
+        width: 100%;
+        flex-direction: column;
+    } 
+    footer {
+        width: 100%;
+    }
+    .platprix{
+        flex-direction: column;
+        font-size: 12px;
+        width: 75%;
+        margin-right: 40px;
+    }
+    .plat{
+        margin-left: 70px;
+    }
+    .prix
+    {
+        margin:auto;
+        text-align: center;
+        margin-left: 70px;
+    }
+    .mentions{
+        font-size: 15px;
+    }
+    .contact{
+        font-size: 15px;
+    }
+     .menu1
+    {
+        margin-bottom: 20%;
+    }
+}
+@media only screen and (max-width: 500px){
+    body {
+        width: 100%;
+        flex-direction: column;
+    } 
+    footer {
+        width: 100%;
+    }
+    .platprix{
+        flex-direction: column;
+        font-size: 12px;
+        width: 75%;
+        margin-right: 40px;
+    }
+    .plat{
+        margin-left: 50px;
+    }
+    .prix
+    {
+        margin:auto;
+        text-align: center;
+        margin-left: 50px;
+    }
+    .mentions{
+        font-size: 15px;
+    }
+    .contact{
+        font-size: 15px;
+    }
+    h3
+    {
+        text-align: center;
+    }
+    .menu1
+    {
+        margin-bottom: 30%;
+    }
+}

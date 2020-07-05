@@ -38,6 +38,10 @@ footer
     bottom: 0;
     position: fixed;
 }
+h1
+{
+color: #FFD54F;
+}
 h2
 {
     font-family: 'DancingScript';
@@ -216,190 +220,82 @@ a
   100% { transform: translate(2px, 0); }
 }
 
-@media only screen and (max-width: 700px){
+
+@media only screen and (max-width: 900px){
     body {
         width: 100%;
         flex-direction: column;
     } 
+    header{
+        width: 100%;
+    }
     footer {
         width: 100%;
     }
+}
+@media only screen and (max-width: 780px){
     .platprix{
         flex-direction: column;
+        margin-top: 6%;
         font-size: 12px;
-        width: 75%;
-        margin-right: 40px;
     }
     .plat{
-        margin-left: 30px;
+        margin: auto;
+        text-align: center;
     }
-    .prix
+    .prix{
+        margin: auto;
+    }
+    .mentions
     {
-        margin-left: 30px;
+        font-size: 14px;
     }
-    .mentions{
-        font-size: 15px;
-    }
-    .contact{
-        font-size: 15px;
-    }
-.traitdroit1
-{
-    width: 25%;
-}
-.traitgauche1
-{
-    width: 25%;
-}
-.traitdroit2
-{
-    width: 25%;
-}
-.traitgauche2
-{
-    width: 25%;
-}
-.traitdroit3
-{
-    width: 25%;
-}
-.traitgauche3
-{
-    width: 25%;
-}
-h3{
-    font-size: 15px;
-}
-.menu3
+    .contact
     {
-        margin-bottom: 20%;
+        font-size: 14px;
+    }
+    .menu3
+    {
+        margin-bottom: 25%;
+    }
+    .traitgauche1 {
+         display: none;
+    }
+    .traitdroit1 {
+        display: none;    }
+     .traitgauche2 {
+        display: none;
+    }
+    .traitdroit2 {
+        display: none;
+    }
+     .traitgauche3 {
+        display: none;
+    }
+    .traitdroit3 {
+        display: none;
+    }
+     .traitgauche1 {
+        display: none;
+    }
+    .traitdroit1 {
+        display: none;
+    }
+     .traitgauche2 {
+        display: none;
+    }
+    .traitdroit2 {
+        display: none;
+    }
+     .traitgauche3 {
+        display: none;
+    }
+    .traitdroit3 {
+        display: none;
+    }
+    h3
+    {
+        margin: auto;
     }
 }
-@media only screen and (max-width: 580px){
-    body {
-        width: 100%;
-        flex-direction: column;
-    } 
-    footer {
-        width: 100%;
-    }
-    .platprix{
-        flex-direction: column;
-        font-size: 10px;
-        width: 75%;
-        margin-right: 40px;
-    }
-    .plat{
-        margin-left: 30px;
-    }
-    .prix
-    {
-        margin-left: 30px;
-    }
-    .mentions{
-        font-size: 15px;
-    }
-    .contact{
-        font-size: 15px;
-    }
-.traitdroit1
-{
-    width: 20%;
 
-}
-.traitgauche1
-{
-    width: 20%;
-    
-}
-.traitdroit2
-{
-    width: 20%;
-}
-.traitgauche2
-{
-    width: 20%;
-}
-.traitdroit3
-{
-    width: 20%;
-
-}
-.traitgauche3
-{
-    width: 20%;
-
-}
-h3{
-    font-size: 15px;
-}
-.menu3
-    {
-        margin-bottom: 20%;
-    }
-}
-@media only screen and (max-width: 480px){
-    body {
-        width: 100%;
-        flex-direction: column;
-    } 
-    footer {
-        width: 100%;
-    }
-    .platprix{
-        flex-direction: column;
-        font-size: 10px;
-        width: 75%;
-        margin-right: 40px;
-    }
-    .plat{
-        margin-left: 30px;
-    }
-    .prix
-    {
-        margin-left: 30px;
-    }
-    .mentions{
-        font-size: 15px;
-    }
-    .contact{
-        font-size: 15px;
-    }
-.traitdroit1
-{
-    width: 15%;
-margin-right: 0px;
-}
-.traitgauche1
-{
-    width: 15%;
-    margin-left: 0px;
-}
-.traitdroit2
-{
-    width: 20%;
-    margin-right: 0px;
-}
-.traitgauche2
-{
-    width: 20%;
-    margin-left: 0px;
-}
-.traitdroit3
-{
-    width: 20%;
-    margin-right: 0px;
-}
-.traitgauche3
-{
-    width: 20%;
-    margin-left: 0px;
-}
-h3{
-    font-size: 15px;
-}
-.menu3
-    {
-        margin-bottom: 30%;
-    }
-}

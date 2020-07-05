@@ -1,0 +1,46 @@
+body 
+{
+    width: 900px;
+    position: relative;
+    margin: auto;
+    padding: 0;
+    overflow-x: hidden;
+    font-size: 17px;
+}
+header
+{
+	width: 900px;
+    display: flex;
+    flex-direction: column;
+	margin-bottom: 45px;
+    font-size: 30px;
+	background-color: #49927C;
+	text-align: center;
+	color: #FFD54F;
+    font-family: 'quebec';
+}    
+footer
+{
+    width: 900px; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #49927C;
+    font-size: 25px;
+    font-family: 'stem';
+    bottom: 0;
+    position: fixed;
+}
+@font-face
+{
+    font-family: 'quebec';
+    src: url(quebec-serial-heavy-regular.ttf);
+}
+a
+{
+    text-decoration: none;
+}
+h1
+{
+color: #FFD54F;
+}

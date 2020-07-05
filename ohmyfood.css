@@ -317,6 +317,7 @@ a
     font-family: 'stem';
     margin-bottom: 12%;
 }
+}
 @media only screen and (max-width: 720px){
     body {
         width: 100%;
@@ -450,6 +451,7 @@ a
 {
     font-size: 17px;
 }
+}
 @media only screen and (max-width: 415px){
     body {
         width: 100%;
@@ -472,10 +474,11 @@ a
     .loading 
 {
     display: block;
-    font-size: 17px;
+    font-size: 16px;
     background-color: #49927C;
     color: #FFD54F;
     padding-left: 15px;
+    margin:auto;
     padding-bottom: 10px;
     padding-top: 10px;
     
@@ -484,17 +487,35 @@ a
     
     font-family: 'stem';
     margin-bottom: 25%;
+    margin-top: 8%;
+
 }
 .mentions
 {
-    font-size: 15px;
+    font-size: 14px;
 }
 .contact
 {
-    font-size: 15px;
+    font-size: 14px;
+}
+.menu1
+{
+    width: 275px;
+}
+.menu2
+{
+    width: 275px;
+}
+.menu3
+{
+    width: 275px;
+}
+.menu4
+{
+    width: 275px;
 }
 .menus
 {
-    margin-left: 7px;
+    margin: auto;
 }
 }

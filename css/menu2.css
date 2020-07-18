@@ -196,27 +196,27 @@ h3
 @font-face 
 {
     font-family: 'CroissantOne';
-    src: url('CroissantOne-Regular.ttf');
+    src: url(fonts/CroissantOne-Regular.ttf);
 }
 @font-face
 {
     font-family: 'quebec';
-    src: url(quebec-serial-heavy-regular.ttf);
+    src: url(fonts/quebec-serial-heavy-regular.ttf);
 }
 @font-face
 {
     font-family: 'Stem';
-    src: url(Stem-Regular.ttf);
+    src: url(fonts/Stem-Regular.ttf);
 }
 @font-face
 {
     font-family: 'Cambria';
-    src: url(Cambria.ttf);
+    src: url(fonts/Cambria.ttf);
 }
 @font-face
 {
     font-family: 'Cheltenham';
-    src: url(Cheltenham-NormalRegular.ttf);
+    src: url(fonts/Cheltenham-NormalRegular.ttf);
 }
 .mestraits{
     display: flex;

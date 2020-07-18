@@ -34,7 +34,7 @@ footer
 @font-face
 {
     font-family: 'quebec';
-    src: url(quebec-serial-heavy-regular.ttf);
+    src: url(fonts/quebec-serial-heavy-regular.ttf);
 }
 a
 {

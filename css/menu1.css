@@ -42,6 +42,7 @@ footer
     font-family: 'Public';
     text-align: center;
     font-size: 30px;
+    color: black;
 }
 h1
 {
@@ -158,27 +159,27 @@ a
 @font-face
 {
     font-family: 'quebec';
-    src: url(quebec-serial-heavy-regular.ttf);
+    src: url(fonts/quebec-serial-heavy-regular.ttf);
 }
 @font-face
 {
     font-family: 'Stem';
-    src: url(Stem-Regular.ttf);
+    src: url(fonts/Stem-Regular.ttf);
 }
 @font-face 
 {
     font-family: 'Segoe';
-    src: url('Segoe-Print-Bold.ttf');
+    src: url(fonts/Segoe-Print-Bold.ttf);
 }
 @font-face 
 {
     font-family: 'Devonshire';
-    src: url('Devonshire-Regular.ttf');
+    src: url(fonts/Devonshire-Regular.ttf);
 }
 @font-face
 {
     font-family: 'Public';
-    src:url('PublicSans-Bold.ttf');
+    src:url(fonts/PublicSans-Bold.ttf);
 }
 
 .myArticle

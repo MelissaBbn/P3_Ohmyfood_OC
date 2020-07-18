@@ -38,26 +38,23 @@ footer
     bottom: 0;
     position: fixed;
 }
-h1
-{
-color: #FFD54F;
-}
 h2
 {
-    font-family: 'DancingScript';
-    background: linear-gradient(154deg, #0626B4 40%, #2083EE 66%, #249DFE 67%);
-   -webkit-background-clip: text;
-   -webkit-text-fill-color: transparent;
-   text-align: center;
-       font-size: 65px;
-    padding-top: 100px;
-    padding-bottom: 40px;
+    font-size: 50px;
+    padding-top: 65px;
+    padding-bottom: 15px;
+    text-align: center;
+    font-family: 'Kaushan';
+    padding-bottom: 10px;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-image: -webkit-linear-gradient(163deg, #9BEE71 40%, #6DB947 54%, #328708 83%);
 }
 h3
 {
      font-family: 'Segoe';
      text-align: center;
-         line-height: 0em;
+     line-height: 0em;
 }
 h3:hover
 {
@@ -65,12 +62,12 @@ h3:hover
 }
 h3:after
 {
- content: '';
+      content: '';
     position: absolute;
     width: 0;
     height: 2px;
     display: block;
-    margin-top: 13px;
+    margin-top: 14px;
     transition: width 1s ease;
 }
 h3:hover:after
@@ -88,12 +85,15 @@ article
 }
 .plat
 {
-    margin-left: 100px;
-        width: 100%;
+    margin-left: 90px;
+    margin-top: 10px;
+    width: 100%;
+    font-size: 15px;
 }
 .prix
 {
-   margin-right: 100px;
+   margin-right: 90px;
+   font-size: 22px;
 }
 .platprix
 {
@@ -104,11 +104,11 @@ article
     font-family: 'Segoe';
     margin-top: 2%;
 }
-.menu3
+.menu4
 {
-    background-color: #EDEDED;
+    background-color: #FFFFFC;
     box-shadow: 0px 0px 25px #CFD8DC;
-        margin-bottom: 20%;
+            margin-bottom: 20%;
 }
 .mentions
 {
@@ -134,83 +134,53 @@ a
 {
     text-decoration: none;
 }
+h1
+{
+color: #FFD54F;
+}
 @font-face
 {
     font-family: 'quebec';
-    src: url(quebec-serial-heavy-regular.ttf);
+    src: url(fonts/quebec-serial-heavy-regular.ttf);
 }
 @font-face
 {
     font-family: 'Stem';
-    src: url(Stem-Regular.ttf);
-}
-@font-face 
-{
-    font-family: 'DancingScript';
-    src: url('DancingScript-VariableFont.ttf');
+    src: url(fonts/Stem-Regular.ttf);
 }
 @font-face 
 {
     font-family: 'Segoe';
-    src: url('Segoe-Print-Bold.ttf');
+    src: url(fonts/Segoe-Print-Bold.ttf);
+}
+@font-face 
+{
+    font-family: 'Kaushan';
+    src: url(fonts/KaushanScript-Regular.ttf);
 }
 .mestraits{
     display: flex;
     flex-direction: row;
 }
-.traitdroit1
+.traitdroit
 {
-    width: 29%;
-    height: 5px;
-    background-color: #0626B4;
+    width: 30%;
+    height: 7px;
     margin:auto;
-    margin-right: 35px;
-      border-bottom-right-radius: 100%;
+    margin-right: 45px;
+    background-image: -webkit-linear-gradient(163deg, #328708 20% , #6DB947 54%, #9BEE71 83%);
+    border-bottom-right-radius: 50%;
+    border-top-left-radius: 50%;
 }
-.traitgauche1
+.traitgauche
 {
-    width: 29%;
-    height: 5px;
-    background-color: #0626B4;
+    width: 30%;
+    height: 7px;
     margin:auto;
-    margin-left: 35px;
-     border-bottom-left-radius: 100%;
-}
-.traitdroit2
-{
-    width: 29%;
-    height: 5px;
-    background-color: #2083EE;
-    margin:auto;
-    margin-right: 35px;
-     border-bottom-right-radius: 100%;
-}
-.traitgauche2
-{
-    width: 29%;
-    height: 5px;
-    background-color: #2083EE;
-    margin:auto;
-    margin-left: 35px;
-     border-bottom-left-radius: 100%;
-}
-.traitdroit3
-{
-    width: 29%;
-    height: 5px;
-    background-color: #249DFE;
-    margin:auto;
-    margin-right: 35px;
-     border-bottom-right-radius: 100%;
-}
-.traitgauche3
-{
-    width: 29%;
-    height: 5px;
-    background-color: #249DFE;
-    margin:auto;
-    margin-left: 35px;
-     border-bottom-left-radius: 100%;
+    margin-left: 45px;
+   background-image:-webkit-linear-gradient(163deg, #9BEE71 20%, #6DB947 54%, #328708 83%);
+   border-bottom-left-radius: 50%;
+    border-top-right-radius: 50%;
 }
 @keyframes wiggle {
   0% { transform: translate(2px, 0); }
@@ -221,7 +191,7 @@ a
 }
 
 
-@media only screen and (max-width: 900px){
+@media only screen and (max-width: 800px){
     body {
         width: 100%;
         flex-direction: column;
@@ -232,9 +202,7 @@ a
     footer {
         width: 100%;
     }
-}
-@media only screen and (max-width: 780px){
-    .platprix{
+   .platprix{
         flex-direction: column;
         margin-top: 6%;
         font-size: 12px;
@@ -246,6 +214,11 @@ a
     .prix{
         margin: auto;
     }
+    
+    .menu4
+    {
+        margin-bottom: 25%;
+    }
     .mentions
     {
         font-size: 14px;
@@ -254,46 +227,13 @@ a
     {
         font-size: 14px;
     }
-    .menu3
-    {
-        margin-bottom: 25%;
-    }
-    .traitgauche1 {
-         display: none;
-    }
-    .traitdroit1 {
-        display: none;    }
-     .traitgauche2 {
+    .traitgauche {
         display: none;
     }
-    .traitdroit2 {
+    .traitdroit {
         display: none;
     }
-     .traitgauche3 {
-        display: none;
-    }
-    .traitdroit3 {
-        display: none;
-    }
-     .traitgauche1 {
-        display: none;
-    }
-    .traitdroit1 {
-        display: none;
-    }
-     .traitgauche2 {
-        display: none;
-    }
-    .traitdroit2 {
-        display: none;
-    }
-     .traitgauche3 {
-        display: none;
-    }
-    .traitdroit3 {
-        display: none;
-    }
-    h3
+      h3
     {
         margin: auto;
     }
